@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.dev.da.maratona.MenuAdminActivity">
+
+    <EditText
+        android:id="@+id/matricula_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/qtd_input"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/qtd_input"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/matricula_hint"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btn_addPontuacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qtd_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/btn_add_pontuacao" />
+
+    <Button
+        android:id="@+id/btn_addFaltas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_remFaltas"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/btn_adicionar_faltas" />
+
+    <Button
+        android:id="@+id/btn_remPontuacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_addPontuacao"
+        android:layout_alignStart="@+id/btn_addPontuacao"
+        android:layout_below="@+id/btn_addPontuacao"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/btn_del_pontuacao" />
+
+    <Button
+        android:id="@+id/btn_remFaltas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView5"
+        android:layout_alignLeft="@+id/btn_addFaltas"
+        android:layout_alignStart="@+id/btn_addFaltas"
+        android:layout_marginBottom="60dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/btn_remover_faltas" />
+
+    <Button
+        android:id="@+id/btn_addPeriodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_remFaltas"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btn_remFaltas"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/btn_adicionar_periodo" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_addPeriodo"
+        android:layout_centerHorizontal="true"
+        android:text="@string/para_todos"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/qtd_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/matricula_input"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/quantidade"
+        android:inputType="number" />
+
+    <ImageButton
+        android:id="@+id/btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/matricula_input"
+        android:layout_toRightOf="@+id/matricula_input"
+        android:background="@color/colorPrimary"
+        app:srcCompat="@drawable/search_icon" />
+
+</RelativeLayout>
